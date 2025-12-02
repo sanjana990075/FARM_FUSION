@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farm Fusion | Smart Multi-Purpose Farm Machine</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav-logo">Farm<span>Fusion</span></div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#timeline">Journey</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#team">Team</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero section" id="hero">
+        <div class="hero-content reveal">
+            <p class="tag">Student Innovation • Smart Agriculture</p>
+            <h1>Farm Fusion – A Compact, Multi-Purpose Machine for Small Scale Farmers</h1>
+            <p class="hero-subtitle">
+                Farm Fusion is a low-cost, multi-power agricultural machine designed to
+                support small-scale farmers with Harvesting, Spraying, and
+                Fertiliser Management using a single, modular platform.
+            </p>
+            <div class="hero-actions">
+                <a href="#features" class="btn primary-btn">Explore Features</a>
+                <a href="#about" class="btn secondary-btn">Project Overview</a>
+            </div>
+            <div class="hero-tags">
+                <span>Solar + Battery </span>
+                <span>Detachable Implements</span>
+                <span>Smart Sprayer System</span>
+            </div>
+        </div>
+
+        <div class="hero-visual reveal">
+            <div class="hero-image-wrapper">
+                <video class="hero-machine-video" autoplay muted loop playsinline>
+                    <source src="images/Quick-Chat-.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="section-header">
+            <p class="section-tag">About the Project</p>
+            <h2>Why Farm Fusion?</h2>
+        </div>
+        <div class="about-box-grid">
+            <div class="about-box reveal">
+                <h3>Decline of Small Farmers</h3>
+                <p>Small-scale farmers are decreasing by nearly <strong>3–4% every year</strong> due to rising costs and
+                    low returns.</p>
+            </div>
+            <div class="about-box reveal">
+                <h3>All-in-One Machine</h3>
+                <p>Farm Fusion combines <strong>soil prep, sowing, spraying, and harvesting</strong> into a single
+                    compact machine.</p>
+            </div>
+            <div class="about-box reveal">
+                <h3>Reduces Dependency</h3>
+                <p>Eliminates the need for buying or renting multiple heavy machines for basic farming activities.</p>
+            </div>
+            <div class="about-box reveal">
+                <h3>AgriLink App</h3>
+                <p>Our app helps farmers <strong>sell crops directly to customers</strong>, removing middlemen and
+                    increasing profit.</p>
+            </div>
+            <div class="about-box reveal">
+                <h3>Support Centers</h3>
+                <p>We plan to set up <strong>2–3 village service centers</strong> for machine maintenance and farmer
+                    support.</p>
+            </div>
+            <div class="about-box reveal">
+                <h3>6-Month Free Trial</h3>
+                <p>Farmers get <strong>6 months of Farm Fusion</strong> to build trust and encourage adoption.</p>
+            </div>
+        </div>
+    </section>
+
+<section class="section" id="features">
+    <div class="section-header">
+        <p class="section-tag">Machine Capabilities</p>
+        <h2>Smart Features</h2>
+    </div>
+
+    <div class="features-card-container reveal">
+
+        <!-- CARD 1 -->
+        <div class="feature-card">
+            <img src="images/solar-power.jpg" class="feature-img"
+                onerror="this.src='https://placehold.co/400x300?text=Solar+Power'">
+            <h3>Solar Powered System</h3>
+
+            <div class="feature-buttons">
+                <button class="btn feature-desc-btn" onclick="openDesc('solar')">Description</button>
+                <a href="solar-demo.mp4" class="btn feature-demo-btn" target="_blank">Demo</a>
+            </div>
+
+            <p class="feature-text">
+                Runs on solar + battery ensuring continuous operation.
+            </p>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="feature-card">
+            <img src="images/tools.jpg" class="feature-img"
+                onerror="this.src='https://placehold.co/400x300?text=Detachable+Tools'">
+            <h3>Detachable Multi-Tools</h3>
+
+            <div class="feature-buttons">
+                <button class="btn feature-desc-btn" onclick="openDesc('tools')">Description</button>
+                <a href="tools-demo.mp4" class="btn feature-demo-btn" target="_blank">Demo</a>
+            </div>
+
+            <p class="feature-text">
+                Tools for ploughing, sowing, spraying, harvesting.
+            </p>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="feature-card">
+            <img src="images/sprayer.jpg" class="feature-img"
+                onerror="this.src='https://placehold.co/400x300?text=Sprayer'">
+            <h3>Smart Sprayer System</h3>
+
+            <div class="feature-buttons">
+                <button class="btn feature-desc-btn" onclick="openDesc('sprayer')">Description</button>
+                <a href="sprayer-demo.mp4" class="btn feature-demo-btn" target="_blank">Demo</a>
+            </div>
+
+            <p class="feature-text">
+                Adjustable nozzles ensure uniform spray with less waste.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- POPUP MODAL -->
+<div id="descModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeDesc()">&times;</span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalText"></p>
+    </div>
+</div>
+
+
+
+    <section class="section section-alt" id="timeline">
+        <div class="section-header">
+            <p class="section-tag">Project Journey</p>
+            <h2>From Idea to Prototype</h2>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                    <h3>Problem Identification</h3>
+                    <p>Observed challenges faced by small farmers in accessing large, costly machinery for basic farm
+                        tasks.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                    <h3>Concept & Design</h3>
+                    <p>Designed a compact machine with modular attachments and multi-power support to keep it practical
+                        and affordable.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                    <h3>Prototype Development</h3>
+                    <p>Developed a working prototype with detachable tools, storage compartments, and adjustable spray
+                        pipes.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                    <h3>Testing & Refinement</h3>
+                    <p>Iterated on the base frame, wheel rotation and tool mounting with feedback from mentors and
+                        vendors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="achievements">
+        <div class="section-header">
+            <p class="section-tag">Recognition</p>
+            <h2>Our Achievements</h2>
+        </div>
+    
+        <div class="achievement-grid">
+    
+            <div class="achievement-card reveal">
+                <div class="achievement-img-box">
+                    <img src="Idea.jpg" alt="Award 1"
+                        onerror="this.src='https://placehold.co/600x400/222/8effb1?text=Best+Innovation'">
+                </div>
+                <div class="achievement-content">
+                    <h3>Winner At Nain Ideothon BITM</h3>
+                    <p>Winner of the Nain Ideothon 2.0 Conducted at BITM.</p>
+                </div>
+            </div>
+
+            <div class="achievement-card reveal">
+                <div class="achievement-img-box">
+                    <img src="IISC.jpg" alt="Award 3"
+                        onerror="this.src='https://placehold.co/600x400/222/8effb1?text=Top+10+Finalist'">
+                </div>
+                <div class="achievement-content">
+                    <h3>Ideothon in IISC Banglore</h3>
+                    <p>Had an Oppurtunity to Participate and Present our Idea in IISC Banglore</p>
+                </div>
+            </div>
+    
+            <div class="achievement-card reveal">
+                <div class="achievement-img-box">
+                    <img src="logo.png" alt="Award 2"
+                        onerror="this.src='https://placehold.co/600x400/222/8effb1?text=Grant+Winner'">
+                </div>
+                <div class="achievement-content">
+                    <h3>Recived 1 Lakh funding from Karnataka Start Up Plolicy </h3>
+                    <p>Selected as an innovative from IIIT Rachiur And Secured Funding</p>
+                </div>
+            </div>
+    
+            <div class="achievement-card reveal">
+                <div class="achievement-img-box">
+                    <img src="2024.jpg" alt="Award 3"
+                        onerror="this.src='https://placehold.co/600x400/222/8effb1?text=Top+10+Finalist'">
+                </div>
+                <div class="achievement-content">
+                    <h3>Runner up District Level Science Mela 2024 </h3>
+                    <p>Team Farm Fusion Won First Runner Up in BALLARI District Level Yuva Utsav 2024</p>
+                </div>
+            </div>
+
+            <div class="achievement-card reveal">
+                <div class="achievement-img-box">
+                    <img src="Olympaid.jpg" alt="Award 3"
+                        onerror="this.src='https://placehold.co/600x400/222/8effb1?text=Top+10+Finalist'">
+                </div>
+                <div class="achievement-content">
+                    <h3>Top - 6 in Start Up Nation Olympaid 2025</h3>
+                    <p>Secured 1k+ likes in Startup Nation Olympaid 2025 and stands in 6th position across India</p>
+                </div>
+            </div>
+
+            <div class="achievement-card reveal">
+                <div class="achievement-img-box">
+                    <img src="2025.jpg" alt="Award 3"
+                        onerror="this.src='https://placehold.co/600x400/222/8effb1?text=Top+10+Finalist'">
+                </div>
+                <div class="achievement-content">
+                    <h3>Winner  District Level Science Mela 2025 </h3>
+                    <p>Team Farm Fusion Won First Place in BALLARI District Level Yuva Utsav 2025</p>
+                </div>
+            </div>
+
+            <div class="achievement-card reveal">
+                <div class="achievement-img-box">
+                    <img src="startup.jpg" alt="Award 3"
+                        onerror="this.src='https://placehold.co/600x400/222/8effb1?text=Top+10+Finalist'">
+                </div>
+                <div class="achievement-content">
+                    <h3>Participated in Startup Festival Ideothon</h3>
+                    <p>Team Farm Fusion Had an Oppurtunity to Participate in Ideothon in Startup Park in Banflore</p>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+    <section class="section" id="team">
+        <div class="section-header">
+            <p class="section-tag">Meet the Creators</p>
+            <h2>Our Team</h2>
+        </div>
+
+        <div class="slider-container reveal">
+            <button class="slide-btn left" onclick="scrollTeamSlider(-1)">&#10094;</button>
+
+            <div class="slider" id="teamSlider">
+                <div class="feature-slide">
+                    <img src="bunny.jpg" onerror="this.src='https://placehold.co/400x400?text=Member+1'">
+                    <h3>Y Banny Kumar</h3>
+                    <p class="team-role"><h4>Mechanical Design & Prototyping</h4></p>
+                    <p>Designing the machine structure, detachable tools, power mechanisms, and creating functional prototypes</p>
+                </div>
+                <div class="feature-slide">
+                    <img src="Sanjana.jpg" onerror="this.src='https://placehold.co/400x400?text=Member+2'">
+                    <h3>R Sanjana</h3>
+                    <p class="team-role"><h4>Software & App Development</h4></p>
+                    <p>Building the digital platform for farmers to sell crops, access machine data, and connect with customers.</p>
+                </div>
+                <div class="feature-slide">
+                    <img src="malli.jpg" onerror="this.src='https://placehold.co/400x400?text=Member+3'">
+                    <h3>G Malleshwari</h3>
+                    <p class="team-role"><h4>Testing & Field Validation</h4></p>
+                    <p>Conducting soil, spraying, and harvesting trials with farmers to refine performance and usability.
+                    </p>
+                </div>
+                <div class="feature-slide">
+                    <img src="Pranathi.jpg" onerror="this.src='https://placehold.co/400x400?text=Member+4'">
+                    <h3>Pranathi A N</h3>
+                    <p class="team-role"><h4>Electrical & Power Systems Engineer</h4></p>
+                    <p>Developing the 2-way power system (Solar, Battery, Diesel), wiring, controls, and safety mechanisms.
+                    </p>
+                </div>
+                <div class="feature-slide">
+                    <img src="Aditya.jpg" onerror="this.src='https://placehold.co/400x400?text=Member+5'">
+                    <h3>T V Aditya</h3>
+                    <p class="team-role"><h4>Market & Business Strategy Lead</h4></p>
+                    <p>Planning pricing, subscription model, service centers, and farmer trust-building strategies.</p>
+                </div>
+                <div class="feature-slide">
+                    <img src="jaya.jpg" onerror="this.src='https://placehold.co/400x400?text=Member+6'">
+                    <h3>Jayshree Kuppasagoudar</h3>
+                    <p class="team-role"><h4>Operations & Outreach Coordinator</h4></p>
+                    <p>Managing communication with vendors, rural service centers, farmers, and ensuring smooth deployment.</p>
+                </div>
+                <div class="feature-slide">
+                    <img src="chethan.jpg" onerror="this.src='https://placehold.co/400x400?text=Member+7'">
+                    <h3>B Chethan</h3>
+                    <p class="team-role"><h4>Research & Problem Analysis</h4></p>
+                    <p>Identifying challenges faced by small-scale farmers and studying the decline in agricultural sustainability.
+                    </p>
+                </div>
+            </div>
+
+            <button class="slide-btn right" onclick="scrollTeamSlider(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© <span id="year">2024</span> Farm Fusion • Project Portfolio by R Sanjana</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
